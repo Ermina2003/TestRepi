@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-
+"""
 # Funkcija y = 2x
 
 x = [0,1,2,3,4]
@@ -24,7 +24,21 @@ plt.ylabel('Y osa')
       
 plt.legend()
 plt.savefig("funkcija.png")
-plt.show()
+plt.show()"""
 
 #FUNKCIJA SE NAZIVA LINE CHAR
+
+
+
+#Pie chart
+import csv
+f = open ("pets.csv")
+sadrzaj =csv.DictReader(f)
+data = next (sadrzaj)
+print(data)
+
+pets = list(data.keys())
+num_pets=[row for row in data.values()]
+plt.pie(num_pets,labels=pets)
+plt.savefig("pie.png")
 
