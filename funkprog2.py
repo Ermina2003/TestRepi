@@ -43,6 +43,13 @@ l2 = [2,4,5]
 l3 =map(lambda x,y : x+y,l1,l2)
 print(list(l3))
 
+#Data je lista elemenata ,odrediti sumiranje
+
+from functools import reduce
+a = [1,2,3,4]
+
+suma = reduce (lambda x,y:x+y,a)
+print(suma)
 
 
 
